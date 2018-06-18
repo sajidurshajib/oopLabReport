@@ -21,7 +21,7 @@ public class sumByJava {
 		Lab3 obj3 = new Lab3();
 		//obj3.con();
 		//obj3.conSum();
-		obj3.conSeries();
+		//obj3.conSeries();
 		//obj3.facTorial();
 		//obj3.pOw();
 		
