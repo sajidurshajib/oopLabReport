@@ -2,14 +2,11 @@ package sirMIK;
 
 import java.util.*;
 
-public class Lab3 extends Lab1 {
+public class Lab3 extends sumByJava {
 	private int sum = 0;
 
 	public void con() {
-		System.out.print("How many consecutive number you want : ");
-		Scanner c = new Scanner(System.in);
-		int con = c.nextInt();
-
+		int con = scanInt("\nHow many consecutive number you want : ");
 		int n = 1;
 		while (n <= con) {
 			System.out.print(n + "  ");
@@ -20,19 +17,19 @@ public class Lab3 extends Lab1 {
 
 	public void conSum() {
 		this.con();
-		System.out.println("\nSum : " + sum);
+		pr("\nSum : " + sum);
 	}
 
 	public void conSeries() {
-		System.out.println("\n");
-		System.out.println("\t+---------------------------------+");
-		System.out.println("\t|    Choose consecutive series    |");
-		System.out.println("\t|    [1] 2+4+6+ … + n             |");
-		System.out.println("\t|    [2] 3+6+9+ … + n             |");
-		System.out.println("\t|    [3] 1^2 +2^2 +3^2 + … + n^2  |");
-		System.out.println("\t|    [4] 1^2 +3^2 +5^2 + … + n^2  |");
-		System.out.println("\t+---------------------------------+");
-		System.out.println("\n");
+		pr("\n");
+		pr("\t+---------------------------------+");
+		pr("\t|    Choose consecutive series    |");
+		pr("\t|    [1] 2+4+6+ … + n             |");
+		pr("\t|    [2] 3+6+9+ … + n             |");
+		pr("\t|    [3] 1^2 +2^2 +3^2 + … + n^2  |");
+		pr("\t|    [4] 1^2 +3^2 +5^2 + … + n^2  |");
+		pr("\t+---------------------------------+");
+		pr("\n");
 
 		System.out.print("\t[+] Choose series : ");
 		Scanner ch = new Scanner(System.in);
@@ -52,7 +49,7 @@ public class Lab3 extends Lab1 {
 				s += 2;
 				i += 1;
 			}
-			System.out.println("\tSum of this consecutive number : " + f);
+			pr("\tSum of this consecutive number : " + f);
 		} else if (choose == 2) {
 			int n;
 			int s = 3;
@@ -67,7 +64,7 @@ public class Lab3 extends Lab1 {
 				s += 3;
 				i += 1;
 			}
-			System.out.println("\tSum of this consecutive number : " + f);
+			pr("\tSum of this consecutive number : " + f);
 		} else if (choose == 3) {
 			int n;
 			int s = 1;
@@ -84,7 +81,7 @@ public class Lab3 extends Lab1 {
 				ns = s * s;
 				i += 1;
 			}
-			System.out.println("\tSum of this consecutive number : " + f);
+			pr("\tSum of this consecutive number : " + f);
 		} else if (choose == 4) {
 			int n;
 			int s = 1;
@@ -101,9 +98,9 @@ public class Lab3 extends Lab1 {
 				ns = s * s;
 				i += 1;
 			}
-			System.out.println("\tSum of this consecutive number : " + f);
+			pr("\tSum of this consecutive number : " + f);
 		} else {
-			System.out.println("Invalid input :( Try again...");
+			pr("Invalid input :( Try again...");
 		}
 	}
 
@@ -121,7 +118,7 @@ public class Lab3 extends Lab1 {
 
 			f = f * num;
 		}
-		System.out.println("Factorial : " + f);
+		pr("Factorial : " + f);
 	}
 
 	public void pOw() {
@@ -133,7 +130,7 @@ public class Lab3 extends Lab1 {
 		Scanner y = new Scanner(System.in);
 		int power = y.nextInt();
 
-		System.out.println("The output of " + num + "^" + power + " = " + Math.pow(num, power));
+		pr("The output of " + num + "^" + power + " = " + Math.pow(num, power));
 	}
 
 }
