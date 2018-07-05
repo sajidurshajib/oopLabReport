@@ -63,11 +63,35 @@ public class sumByJava {
 
 			} else if (lbnum == 3) {
 				Lab3 obj3 = new Lab3();
-				// obj3.con();
-				// obj3.conSum();
-				// obj3.conSeries();
-				// obj3.facTorial();
-				// obj3.pOw();
+				pr("\n");
+				pr("[1] Consucative number ->");
+				pr("[2] Summetion of Consucative number ->");
+				pr("[3] Consucative number series ->");
+				pr("[4] Factorial ->");
+				pr("[5] Set power of a number ->");
+				pr("[6] Print 1st fibonacci number ->");
+				pr("[7] Star structure ->");
+				
+				pr("\n");
+				int lbnum3 = scanInt("[+] Which program you want to see : ");
+				if (lbnum3 == 1) {
+					obj3.con();
+				} else if (lbnum3 == 2) {
+					obj3.conSum();
+				} else if (lbnum3 == 3) {
+					obj3.conSeries();
+				} else if (lbnum3 == 4) {
+					obj3.facTorial();
+				}  else if (lbnum3 == 5) {
+					obj3.pOw();
+				} else if(lbnum3 == 6){
+					obj3.fibo();
+				} else if(lbnum3 == 7){
+					obj3.star();
+				}  else {
+					pr("Wrong input!");
+				}
+			
 			} else {
 				pr("You input wrong number...!");
 			}
@@ -80,9 +104,8 @@ public class sumByJava {
 			} else if (reStart.equals("n") || reStart.equals("N")) {
 				reInt = 2;
 				pr("\n\t..::[] Shutdown program []::..");
-			}
+			}	
 		}
-
 	}
 
 	public static void pr(Object yourString) {
@@ -100,8 +123,8 @@ public class sumByJava {
 		return y;
 	}
 
-	public static double scanDouble(String textForInt) {
-		System.out.print(textForInt);
+	public static double scanDouble(String textForDouble) {
+		System.out.print(textForDouble);
 		Scanner x = new Scanner(System.in);
 		double y = x.nextDouble();
 		return y;

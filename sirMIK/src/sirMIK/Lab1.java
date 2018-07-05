@@ -55,16 +55,24 @@ public class Lab1 extends sumByJava {
 
 	public void fiveDigit() {
 		int x = scanInt("\nInpt 5 digit number : ");
+		int miu = x/10000;
 		int y;
 		int f = 0;
-		p("Reversed number : ");
-		while (x != 0) {
-			y = x % 10;
-			p(y);
-			f = f + y;
-			x = x / 10;
-		}
-		pr("\nSum : " + f);
+		int rev = 0;
+		
+		if (miu < 1|| miu > 9 ) {
+			pr("Invalid(Use 5 digit exectly...!)");
+		}else {
+			while (x != 0) {
+				y = x % 10;
+				rev = rev * 10 + y;
+				//sum
+				f = f + y;
+				x = x / 10;
+			}
+			pr("After reversed : "+rev);
+			pr("\nSum : " + f);
+		}				
 	}
 
 	public void cyLendar() {
