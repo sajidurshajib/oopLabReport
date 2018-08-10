@@ -32,6 +32,15 @@ public class Invoice {
 		return quantity;
 	}
 	
+	public double getPrice() {
+		return price;
+	}
+	
+	
+	public double getTotalPrice() {
+		return quantity*price;
+	}
+	
 	
 
 }
