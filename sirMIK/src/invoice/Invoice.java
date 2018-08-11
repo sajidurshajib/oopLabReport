@@ -1,4 +1,4 @@
-package inVc;
+package invoice;
 
 public class Invoice {
 	private String number;

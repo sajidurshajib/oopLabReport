@@ -1,4 +1,4 @@
-package inVc;
+package invoice;
 
 import java.util.Scanner;
 
