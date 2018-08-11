@@ -1,4 +1,4 @@
-package sirMIK;
+package threeLab;
 
 public class Lab3 extends sumByJava {
 	private int sum = 0;

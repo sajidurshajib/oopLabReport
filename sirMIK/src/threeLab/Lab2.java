@@ -1,4 +1,4 @@
-package sirMIK;
+package threeLab;
 
 public class Lab2 extends sumByJava {
 	public void evenOdd() {
