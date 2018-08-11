@@ -29,11 +29,19 @@ public class Invoice {
 	}
 	
 	public int getQuantity() {
-		return quantity;
+		if(quantity <= 0) {
+			return 0;
+		}else {
+			return quantity;
+		}		
 	}
 	
 	public double getPrice() {
-		return price;
+		if(price <= 0) {
+			return 0.0;
+		}else {
+			return price; 
+		}
 	}
 	
 	
