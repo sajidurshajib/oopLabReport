@@ -14,7 +14,7 @@ public class TryCatch_Block {
 			System.out.println("Your integer is : " + a);
 		}
 		catch(InputMismatchException e) {
-			System.out.println("Input integer. The eception is :" + e);
+			System.out.println("Input integer. The exception is :" + e);
 		}
 		finally {
 			System.out.println("Program end");
