@@ -1,6 +1,5 @@
 package lab_11;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Throw_Throws {
