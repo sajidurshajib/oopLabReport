@@ -5,25 +5,29 @@ import java.util.Scanner;
 public class Large {
 
 	public static void main(String[] args) {
-		int number;
+		int[] number = new int[10];
 		int counter = 1;
 		int largest = 0;
 		Scanner x = new Scanner(System.in);
 		
-		System.out.println("Input 10 number ==>\n");
-		while(counter <= 10) {
-			System.out.print("["+counter+"] "+"number = ");
-			number = x.nextInt();
-			
-			if(largest <= number) {
-				largest = number;
-			}
-			
-			counter++;
+		for(counter = 0; counter <= 9; counter++) {
+			System.out.print("["+counter+"]"+" = ");
+			number[counter]= x.nextInt();
 		}
 		
-		System.out.println("The largest number is : " + largest);
-
+		for(counter = 0; counter <= 9; counter++) {
+			if(counter == 9) {
+				if(number[counter]>largest) {
+					largest = number[counter];
+				}
+				break;
+			}
+			if(number[counter] > largest) {
+				largest = number[counter];
+			}
+		}
+		
+		System.out.println("Largest number is: "+largest);
 	}
 
 }
